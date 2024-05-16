@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
     <title>Virtual Vanguard</title>
 </head>
-<body>
+<body id="home">
     <section>
         <header>
             <nav class="navbar">
@@ -26,7 +26,7 @@
                 </div>
             </nav>
         </header>
-        <div class="slideshow-container">
+        <div class="slideshow-container" >
             <div class="slide fade">
                 <img src="images/banner-1.png" alt="Banner 1">
             </div>
@@ -37,28 +37,36 @@
     </section>
     <section>
         <div class="get-points">
-            <h1 class="main-title">Adquirir Pontos</h1>
-            <button class="btn-get-points" onclick="convidar-user()">Convidar amigos</button>
-            <button class="btn-get-points" onclick="assistir-fe()">Assistir a Formula E</button>    
+            <h1 class="main-title" id="adquirir-pontos">ADQUIRIR PONTOS</h1>
+            <div class="main-btn-get-points">
+            <button class="btn-get-points" id="btn-get-points-1" onclick="convidar-user()">Convidar amigos</button>
+            <button class="btn-get-points" id="btn-get-points-2" onclick="assistir-fe()">Assistir a Formula E</button>
+            </div>
         </div>    
     </section>
     <section>
         <div class="buy-powers">
-            <h1 class="main-title">Comprar Poderes</h1>
-            <button class="btn-buy-powers" onclick="buy-attack-mode">Attack Mode</button>
-            <button class="btn-buy-powers" onclick="buy-fan-boost">Fan Boost</button>
+            <h1 class="main-title" id="comprar-poderes">COMPRAR PODERES</h1>
+            <div class="main-buy-powers">
+            <button class="btn-buy-powers" onclick="buy-attack-mode()">Attack Mode</button>
+            <button class="btn-buy-powers" onclick="buy-fan-boost()">Fan Boost</button>
+            </div>
         </div>
     </section>
     <section>
+        <div class="img-footer">
         <img src="images/footer-img.png" alt="Imagem de carro de formula E">
+        </div>
         <footer>
-            <div class="footer-menu">
-                <a class="itens-footer" href="#home">home</a>
-                <a class="itens-footer" href="#adquirir-pontos">Adquirir Pontos</a>
-                <a class="itens-footer" href="#comprar-poderes">Comprar Poderes</a>
-            </div>
-            <div class="copyright">
-                <p id="vv-copyright">© Virtual Vanguard - Todos os direitos reservados - Segurança e privacidade</p>
+            <div class="footer">
+                <div class="footer-menu">
+                    <a class="itens-footer" href="#home">home</a>
+                    <a class="itens-footer" href="#adquirir-pontos">Adquirir Pontos</a>
+                    <a class="itens-footer" href="#comprar-poderes">Comprar Poderes</a>
+                </div>
+                <div class="copyright">
+                    <p id="vv-copyright">© Virtual Vanguard - Todos os direitos reservados - Segurança e privacidade</p>
+                </div>
             </div>
         </footer>
     </section>

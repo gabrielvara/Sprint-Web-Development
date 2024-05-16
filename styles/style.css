@@ -2,11 +2,15 @@
     background-color: black;
 
     height: 10vh;
-    width: auto;
+    width: 100%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
 }
 
 #logo-navbar {
@@ -57,7 +61,7 @@
 .slideshow-container {
     position: relative;
     width: 100%;
-    padding-top: 50vh;
+    padding-top: 70vh;
     overflow: hidden;
 }
 
@@ -92,3 +96,139 @@
 .slideshow-container .slide:nth-child(2) {
     animation: slideAnimation 12s infinite 4s;
 }
+
+.get-points {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 6vh;
+    padding: 1vh 5vh;
+    margin-top: 2vh;
+    margin-left: 2vh;
+    color: #E31937;
+    border-bottom: 0.8vh solid #E31937;
+    letter-spacing: .5vh;
+}
+
+.main-btn-get-points {
+    padding: 10vh;
+    display: flex;
+    gap: 10vh;
+}
+
+.btn-get-points {
+    padding: 20vh 30vh;
+    font-family: "Play", sans-serif;
+    color: white;
+    background-color: #E31937;
+    border-radius: 1vh;
+    font-weight: 400;
+    font-size: 3vh;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+    transition: font-size 0.3s ease, padding 0.3s ease;
+    
+}
+
+.btn-get-points:hover {
+    font-size: 3.2vh;
+    padding: 22vh 33vh;
+    cursor: pointer;
+}
+
+.buy-powers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column ;
+    align-items: center;
+    text-align: center;
+}
+
+.main-buy-powers {
+    padding: 10vh;
+    display: flex;
+    gap: 10vh;
+}
+
+.btn-buy-powers {
+    padding: 20vh 30vh;
+    font-family: "Play", sans-serif;
+    color: white;
+    background-color: #E31937;
+    border-radius: 1vh;
+    font-weight: 400;
+    font-size: 3vh;
+    box-shadow: 0px 5px 20px 0px rgba(0,0,0,0.3);
+    transition: font-size 0.3s ease, padding 0.3s ease;
+}
+
+.btn-buy-powers:hover {
+    font-size: 3.2vh;
+    padding: 22vh 33vh;
+    cursor: pointer;
+}
+
+.img-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    padding: 0;
+    position: relative;
+}
+
+.footer {
+    background-color: black;
+
+    height: 45vh;
+    width: auto;
+
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-menu {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    font-size: 2.5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 7vh;
+}
+
+.itens-footer {
+    color: white;
+    letter-spacing: .5vh;
+    text-decoration: none;
+    border-bottom: 0.1vh solid;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    padding-bottom: 1vh;
+    padding-top: 1vh;
+    transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.itens-footer:hover {
+    font-size: 2.7vh;
+    color: #E31937;
+}
+
+#vv-copyright {
+    font-family: "Play", sans-serif;
+    font-weight: 400;
+    color: gray ;
+    padding: 1vh;
+}
+
+
