@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
+    <title>Virtual Vanguard</title>
+</head>
+<body>
+    <section>
+        <header>
+            <nav class="navbar">
+                <img id="logo-navbar" src="images/logo.png" alt="Logo FIAP | Tech Mahindra">
+                <div class="menu-navbar">
+                    <a class="itens-navbar" href="#home">HOME</a>
+                    <a class="itens-navbar" href="#adquirir-pontos">ADQUIRIR PONTOS</a>
+                    <a class="itens-navbar" href="#comprar-poderes">COMPRAR PODERES</a>
+                </div>
+                <div class="contador-pontos">
+                    <img id="point-icon" src="images/points-icon.png" alt="Points Icon">
+                    <p>0.0</p>
+                </div>
+            </nav>
+        </header>
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="images/banner-1.png" alt="Banner 1">
+            </div>
+            <div class="slide fade">
+                <img src="images/banner-2.png" alt="Banner 2">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="get-points">
+            <h1 class="main-title">Adquirir Pontos</h1>
+            <button class="btn-get-points" onclick="convidar-user()">Convidar amigos</button>
+            <button class="btn-get-points" onclick="assistir-fe()">Assistir a Formula E</button>    
+        </div>    
+    </section>
+    <section>
+        <div class="buy-powers">
+            <h1 class="main-title">Comprar Poderes</h1>
+            <button class="btn-buy-powers" onclick="buy-attack-mode">Attack Mode</button>
+            <button class="btn-buy-powers" onclick="buy-fan-boost">Fan Boost</button>
+        </div>
+    </section>
+    <section>
+        <img src="images/footer-img.png" alt="Imagem de carro de formula E">
+        <footer>
+            <div class="footer-menu">
+                <a class="itens-footer" href="#home">home</a>
+                <a class="itens-footer" href="#adquirir-pontos">Adquirir Pontos</a>
+                <a class="itens-footer" href="#comprar-poderes">Comprar Poderes</a>
+            </div>
+            <div class="copyright">
+                <p id="vv-copyright">© Virtual Vanguard - Todos os direitos reservados - Segurança e privacidade</p>
+            </div>
+        </footer>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
