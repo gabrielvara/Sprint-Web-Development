@@ -1,75 +1,31 @@
 <!DOCTYPE html>
-<html lang="pt_br">
+<html lang="en">  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/login.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <title>Virtual Vanguard</title>
+    <title>Login</title>
 </head>
-<body id="home">
-    <section>
-        <header>
-            <nav class="navbar">
-                <img id="logo-navbar" src="images/logo.png" alt="Logo FIAP | Tech Mahindra">
-                <div class="menu-navbar">
-                    <a class="itens-navbar" href="#home">HOME</a>
-                    <a class="itens-navbar" href="#adquirir-pontos">ADQUIRIR PONTOS</a>
-                    <a class="itens-navbar" href="#comprar-poderes">COMPRAR PODERES</a>
-                </div>
-                <div class="contador-pontos">
-                    <img id="point-icon" src="images/points-icon.png" alt="Points Icon">
-                    <p>0.0</p>
-                </div>
-            </nav>
-        </header>
-        <div class="slideshow-container" >
-            <div class="slide fade">
-                <img src="images/banner-1.png" alt="Banner 1">
-            </div>
-            <div class="slide fade">
-                <img src="images/banner-2.png" alt="Banner 2">
-            </div>
+<body>
+    <div class="background">
+        <div class="login-container">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Usuário</label>
+                <input type="text" id="username" name="username" placeholder="Digite seu usuário" required>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+                
+                <button onclick="validateForm()">Entrar</button>
+            </form>
+            <div id="error-message" class="error-message"></div>
         </div>
-    </section>
-    <section>
-        <div class="get-points">
-            <h1 class="main-title" id="adquirir-pontos">ADQUIRIR PONTOS</h1>
-            <div class="main-btn-get-points">
-            <button class="btn-get-points" id="btn-get-points-1" onclick="convidar-user()">Convidar amigos</button>
-            <button class="btn-get-points" id="btn-get-points-2" onclick="assistir-fe()">Assistir a Formula E</button>
-            </div>
-        </div>    
-    </section>
-    <section>
-        <div class="buy-powers">
-            <h1 class="main-title" id="comprar-poderes">COMPRAR PODERES</h1>
-            <div class="main-buy-powers">
-            <button class="btn-buy-powers" onclick="buy-attack-mode()">Attack Mode</button>
-            <button class="btn-buy-powers" onclick="buy-fan-boost()">Fan Boost</button>
-            </div>
         </div>
-    </section>
-    <section>
-        <div class="img-footer">
-        <img src="images/footer-img.png" alt="Imagem de carro de formula E">
-        </div>
-        <footer>
-            <div class="footer">
-                <div class="footer-menu">
-                    <a class="itens-footer" href="#home">home</a>
-                    <a class="itens-footer" href="#adquirir-pontos">Adquirir Pontos</a>
-                    <a class="itens-footer" href="#comprar-poderes">Comprar Poderes</a>
-                </div>
-                <div class="copyright">
-                    <p id="vv-copyright">© Virtual Vanguard - Todos os direitos reservados - Segurança e privacidade</p>
-                </div>
-            </div>
-        </footer>
-    </section>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
