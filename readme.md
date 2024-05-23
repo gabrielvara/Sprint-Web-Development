@@ -1,5 +1,5 @@
 ![Fiap - TechMahindra](logofigma-Copia.PNG)
-# Sistema de Pontos
+# Projeto Fiap-TechMahindra
 
 ## O Projeto
 Fórmula E 
