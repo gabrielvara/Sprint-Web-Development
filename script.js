@@ -1,3 +1,21 @@
+let pontos = 0
+let fanBoost = 0
+let attackMode = 0
+
+function convidarUser() {
+    let convidado = window.prompt("Qual o nome do usuário convidado")
+    window.alert(`O usuário: ${convidado} foi convidado com sucesso`)
+    pontos += 400
+    document.getElementById("pontos").innerText = pontos
+}
+
+function assistirFe() {
+    window.open("https://www.fiaformulae.com/pt-br", "_blank");
+    pontos += 200
+    document.getElementById("pontos").innerText = pontos
+}
+
+
 function validateForm() {
     let username = document.getElementById("username").value
     let password = document.getElementById("password").value

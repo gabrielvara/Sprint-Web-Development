@@ -22,7 +22,7 @@
                 </div>
                 <div class="contador-pontos">
                     <img id="point-icon" src="images/points-icon.png" alt="Points Icon">
-                    <p>0.0</p>
+                    <p id="pontos">0.0</p>
                 </div>
             </nav>
         </header>
@@ -52,8 +52,8 @@
         <div class="get-points">
             <h1 class="main-title" id="adquirir-pontos">ADQUIRIR PONTOS</h1>
             <div class="main-btn-get-points">
-            <button class="btn-get-points" id="btn-get-points-1" onclick="convidar-user()">Convidar amigos</button>
-            <button class="btn-get-points" id="btn-get-points-2" onclick="assistir-fe()">Assistir a Formula E</button>
+            <button class="btn-get-points" id="btn-get-points-1" onclick="convidarUser()">Convidar amigos<br>+400</button>
+            <button class="btn-get-points" id="btn-get-points-2" onclick="assistirFe()">Assistir a Formula E<br>+200</button>
             </div>
         </div>    
     </section>
@@ -61,9 +61,17 @@
         <div class="buy-powers">
             <h1 class="main-title" id="comprar-poderes">COMPRAR PODERES</h1>
             <div class="main-buy-powers">
-            <button class="btn-buy-powers" onclick="buy-attack-mode()">Attack Mode</button>
-            <button class="btn-buy-powers" onclick="buy-fan-boost()">Fan Boost</button>
+            <button class="btn-buy-powers" onclick="buyAttackMode()">Attack Mode<br>-1000</button>
+            <button class="btn-buy-powers" onclick="buyFanBoost()">Fan Boost<br>-1500</button>
             </div>
+        </div>
+    </section>
+    <section>
+        <div class="buy-powers">
+        <h1 class="main-title" id="comprar-poderes">MEUS PODERES</h1>
+        <div class="main-buy-powers">
+            <button class="btn-buy-powers" onclick="show-powers()">Visualizar meus poderes</button>
+        </div>
         </div>
     </section>
     <section>
