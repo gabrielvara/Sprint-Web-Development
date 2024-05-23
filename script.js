@@ -15,6 +15,25 @@ function assistirFe() {
     document.getElementById("pontos").innerText = pontos
 }
 
+function buyAttackMode() {
+    pontos -= 1000
+    document.getElementById("pontos").innerText = pontos
+    window.alert("Compra realizada com sucesso!")
+    attackMode += 1
+}
+
+function buyFanBoost() {
+    pontos -= 1500
+    document.getElementById("pontos").innerText = pontos
+    window.alert("Compra realizada com sucesso!")
+    fanBoost += 1
+}
+
+function showPowers() {
+    window.alert(`Poderes comprados:
+    FanBoost: ${fanBoost}
+    AttackMode: ${attackMode}`)
+}
 
 function validateForm() {
     let username = document.getElementById("username").value
